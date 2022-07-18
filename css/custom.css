@@ -1,0 +1,41 @@
+#image-slider{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.card {
+    margin-top: 20px;
+}
+image{
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+h5{
+    color: darkgreen;
+    font-size:x-large;
+
+}
+p{
+    color: black;
+}
+a{
+    color: darkgreen;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
