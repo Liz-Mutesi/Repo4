@@ -5,6 +5,14 @@ function validationForm(){
     let phone = document.forms["RegForm"]["Telephone"];
     //let username = document.forms["RegForm"]["username"];
     
+    nameRegex = /^[A-Za-z]+$/
+    emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#^()])[A-Za-z\d@#$!%*?&^()]{8,}$/
+    numberRegex = /^[0-9]*$/
+
+    alphaNumeric = /^[A-Za-z0-9]+$/
+
+   
     if(username.value == ""){
         //alert("Please enter your name");
         username.style.border = "2px solid red";
@@ -16,24 +24,17 @@ function validationForm(){
 
     }
 
-    if(email.value == ""){
+    if(email.value == ""|| !emailRegex.test(email.value) ){
         //alert("Please enter your email");
         email.style.border = "2px solid red";
         //email.focus();
         return false
-    } else{ email.style.border = "2px solid green";
+     } else{ email.style.border = "2px solid green";
         
     }
-    if(email.value.indexOf("@", 0)<0 || email.value.indexOf ("."),0 <0 ){
-        //alert("Please enter a valid email address");
-        email.style.border = "2px solid red";
-        //email.focus();
-        return false;
-    } else { email.style.border = "2px solid green";
-    }
-
-    if(password.value == "" || password.value.length != 6){
-        //alert("Please enter your password");
+    
+    if(password.value == "" || !passRegex.test(password.value)){
+        //alert("Please enter valid password");
         password.style.border = "2px solid red";
         //password.focus();
         return false;
@@ -49,4 +50,5 @@ function validationForm(){
         return false;
     } else { phone.style.border = "2px solid green";
 }
+
 }
