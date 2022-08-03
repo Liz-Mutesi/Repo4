@@ -1,5 +1,5 @@
 .w3docs {
-    margin-left: 70px;
+    margin-left: 40px;
     font-weight: bold;
     text-align: left;
     font-family: sans-serif, bold, Arial, Helvetica;
@@ -9,6 +9,12 @@
     display: flex;
     align-items: center;
     width: 100%;
+  }
+  .row {
+    padding-top: 60px;
+  }
+  .col {
+    border-radius: 20%;
   }
   div input {
     margin-right: 10px;
@@ -28,12 +34,23 @@
     display: block;
     width: 100%;
     margin-bottom: 5px;
+    color: rgba(0, 128, 0, 0.973);
   }
   input[type=submit]:hover {
-    background-color: #1c60f1;
+    background-color: rgba(0, 128, 0, 0.973);
     color: #ffffff;
     border: none;
     border-radius: 10%;
     font-size: 18px;
     font-weight: 500;
+} 
+h2 {
+  color: rgba(0, 128, 0, 0.973);
+}
+h6 {
+  color: blue;
+ font-size:xx-small;
+}
+input[type=submit] {
+  color: rgba(0, 128, 0, 0.973);
 }
