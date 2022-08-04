@@ -48,9 +48,17 @@ h2 {
   color: rgba(0, 128, 0, 0.973);
 }
 h6 {
-  color: blue;
- font-size:xx-small;
+  color:rgb(59, 59, 231);
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 input[type=submit] {
   color: rgba(0, 128, 0, 0.973);
+}
+.login-box {
+  border-radius: 15px;
+  margin-bottom: 20rem;
+}
+.bg-main {
+  background: url("/img/corn-dusan.png");
 }
